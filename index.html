@@ -1,0 +1,524 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Always Proof</title>
+    <meta
+      name="description"
+      content="Always Proof is a speculative design critique of welfare surveillance and automated eligibility systems."
+    />
+    <link rel="icon" type="image/png" href="./assets/favicon.png" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <canvas id="field-canvas" aria-hidden="true"></canvas>
+
+    <header class="site-header" data-reveal>
+      <a class="brand" href="#top" aria-label="Always Proof home">
+        <img class="brand-mark" src="./assets/logo-mark.png" alt="" />
+        <span>ALWAYS PROOF</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="#process">Process</a>
+        <a href="#faq">FAQ</a>
+        <a href="#pricing">Plans</a>
+        <a href="#statement">Statement</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero section-shell" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="system-line" data-reveal>
+            <span class="light-content">Automatic eligibility support system</span>
+            <span class="dark-content">24/7 automatic proof extraction system</span>
+          </p>
+          <h1 id="hero-title" data-reveal>ALWAYS PROOF<span>TM</span></h1>
+          <p class="hero-subtitle" data-reveal>
+            <button id="trust-trigger" class="trust-trigger" type="button">
+              <span class="light-content">Trust</span>
+              <span class="dark-content">No escape</span>
+            </button>
+            <span class="light-content"> Complete. No Hassle.</span>
+            <span class="dark-content">. Always monitored.</span>
+          </p>
+          <p class="hero-body" data-reveal>
+            <span class="light-content">
+              Never submit documents again. Automated eligibility verification keeps your status
+              current when you qualify, with fewer delays and a clearer path through the process.
+            </span>
+            <span class="dark-content">
+              Your data automatically proves you. Your body, location, and behavior continuously
+              stream into government systems. There is no off button.
+            </span>
+          </p>
+          <div class="hero-actions" data-reveal>
+            <a class="primary-action" href="#process">
+              <span class="light-content">See how simple it is</span>
+              <span class="dark-content">Learn how it watches</span>
+            </a>
+            <a class="quiet-action" href="#statement">This is not a real product</a>
+          </div>
+        </div>
+
+        <aside class="proof-device" aria-label="Live proof status" data-reveal>
+          <div class="device-glass">
+            <div class="scan-orbit"></div>
+            <div class="score">
+              <span>
+                <span class="light-content">Verification confidence</span>
+                <span class="dark-content">Self-Proof Score</span>
+              </span>
+              <strong>61</strong>
+            </div>
+            <div class="signal-list" aria-label="Collected signals">
+              <span>
+                <span class="light-content">Application readiness</span>
+                <span class="dark-content">Heartbeat variance</span>
+              </span>
+              <span>
+                <span class="light-content">Document replacement</span>
+                <span class="dark-content">Location confidence</span>
+              </span>
+              <span>
+                <span class="light-content">Secure verification</span>
+                <span class="dark-content">Purchase anomaly</span>
+              </span>
+              <span>
+                <span class="light-content">Instant status</span>
+                <span class="dark-content">Eligibility drift</span>
+              </span>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <section class="promise-band" aria-label="Product promise">
+        <p data-reveal>
+          <span class="light-content promise-label">A simpler welfare path</span>
+          <span class="light-content promise-main">
+            Imagine a world where welfare feels simple: fewer repeated forms, shorter waits, and a
+            support system that can recognize eligibility without making people start over.
+          </span>
+          <span class="dark-content promise-main">
+            It sounds like relief. It behaves like a cage. The promise of effortless proof becomes
+            a system where nothing is missed, nothing is forgotten, and no one can leave.
+          </span>
+        </p>
+      </section>
+
+      <section class="benefits section-shell" aria-labelledby="benefits-title">
+        <div class="section-heading" data-reveal>
+          <h2 id="benefits-title">Why Always Proof?</h2>
+          <p>
+            <span class="light-content">
+              A verification layer that makes support feel immediate, fair, and easy to understand.
+            </span>
+            <span class="dark-content">
+              Four reassuring product claims. Four different ways to say that a person has become
+              administrative evidence.
+            </span>
+          </p>
+        </div>
+        <div class="benefit-layout">
+          <article class="benefit-panel" data-reveal>
+            <span class="panel-index">
+              <span class="light-content">Instant</span>
+              <span class="dark-content">Continuous</span>
+            </span>
+            <h3>
+              <span class="light-content">24/7 automatic verification</span>
+              <span class="dark-content">24/7 monitoring</span>
+            </h3>
+            <p>
+              <span class="light-content">
+                Real-time eligibility assessment means you know your status immediately. No delays.
+                No mysteries.
+              </span>
+              <span class="dark-content">
+                Heart rate, location, contacts, purchases, sleep patterns, emotional detection, and
+                audio-visual recording are collected every second.
+              </span>
+            </p>
+            <strong>
+              <span class="light-content">Everything stays current.</span>
+              <span class="dark-content">Nothing is missed. Nothing is forgotten.</span>
+            </strong>
+          </article>
+          <article class="benefit-panel tall" data-reveal>
+            <span class="panel-index">
+              <span class="light-content">Transparent</span>
+              <span class="dark-content">Inescapable</span>
+            </span>
+            <h3>
+              <span class="light-content">Your life, your evidence</span>
+              <span class="dark-content">Your life as data</span>
+            </h3>
+            <p>
+              <span class="light-content">
+                Your legitimate data helps prove your eligibility through one consistent record,
+                reducing confusion and repeated manual review.
+              </span>
+              <span class="dark-content">
+                Your data syncs to government systems. You cannot modify it. You cannot dispute it.
+                Your life itself becomes the proof.
+              </span>
+            </p>
+          </article>
+          <article class="benefit-panel" data-reveal>
+            <span class="panel-index">
+              <span class="light-content">Secure</span>
+              <span class="dark-content">Algorithmic</span>
+            </span>
+            <h3>
+              <span class="light-content">Privacy built in</span>
+              <span class="dark-content">AI determines your worth</span>
+            </h3>
+            <p>
+              <span class="light-content">
+                Your data is encrypted, secure, and used only for eligibility assessment. Your
+                information is protected.
+              </span>
+              <span class="dark-content">
+                A Self-Proof Score from 0 to 100. The algorithm does not explain itself. The
+                algorithm is always right. You have no recourse.
+              </span>
+            </p>
+          </article>
+          <article class="benefit-panel tall" data-reveal>
+            <span class="panel-index">
+              <span class="light-content">Simple</span>
+              <span class="dark-content">Permanent</span>
+            </span>
+            <h3>
+              <span class="light-content">One system, all solutions</span>
+              <span class="dark-content">You are forever tracked</span>
+            </h3>
+            <p>
+              <span class="light-content">
+                Stop juggling multiple applications. One unified system. One verification. Complete
+                peace of mind.
+              </span>
+              <span class="dark-content">
+                Once enrolled, you are permanently monitored. Your data is retained indefinitely.
+                Deletion is not available. Re-application is automatic.
+              </span>
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="process" class="process section-shell" aria-labelledby="process-title">
+        <div class="section-heading narrow" data-reveal>
+          <h2 id="process-title">The Process</h2>
+          <p>
+            <span class="light-content">
+              A calmer path from need to support, designed to remove paperwork and uncertainty.
+            </span>
+            <span class="dark-content">
+              A five-step eligibility flow where convenience steadily becomes submission.
+            </span>
+          </p>
+        </div>
+        <div class="process-track" aria-label="Always Proof process">
+          <article class="process-step" data-reveal>
+            <span>1</span>
+            <div>
+              <h3>
+                <span class="light-content">Enroll once</span>
+                <span class="dark-content">Wear the device</span>
+              </h3>
+              <p>
+                <span class="light-content">
+                  Connect your profile one time and let Always Proof keep your eligibility record
+                  complete.
+                </span>
+                <span class="dark-content">
+                  The system is embedded in a small wearable. It can sit on your wrist, your neck,
+                  or under your skin.
+                </span>
+              </p>
+            </div>
+          </article>
+          <article class="process-step" data-reveal>
+            <span>2</span>
+            <div>
+              <h3>
+                <span class="light-content">Verify automatically</span>
+                <span class="dark-content">We collect everything</span>
+              </h3>
+              <p>
+                <span class="light-content">
+                  Approved signals replace repetitive forms, so your status stays up to date without
+                  extra work.
+                </span>
+                <span class="dark-content">
+                  Biometrics, GPS, social network patterns, spending, sleep, facial recognition, and
+                  voice stress are recorded.
+                </span>
+              </p>
+            </div>
+          </article>
+          <article class="process-step" data-reveal>
+            <span>3</span>
+            <div>
+              <h3>
+                <span class="light-content">Receive a clear status</span>
+                <span class="dark-content">AI determines your worth</span>
+              </h3>
+              <p>
+                <span class="light-content">
+                  Your eligibility dashboard tells you what is complete, what changed, and what to
+                  expect next.
+                </span>
+                <span class="dark-content">
+                  A Self-Proof Score is calculated from routine, finances, social health, emotion
+                  regulation, and sleep quality.
+                </span>
+              </p>
+            </div>
+          </article>
+          <article class="process-step" data-reveal>
+            <span>4</span>
+            <div>
+              <h3>
+                <span class="light-content">Stay covered</span>
+                <span class="dark-content">You are always being evaluated</span>
+              </h3>
+              <p>
+                <span class="light-content">
+                  Automatic updates reduce interruptions, helping benefits continue when you qualify.
+                </span>
+                <span class="dark-content">
+                  Every heartbeat, purchase, and conversation can change your eligibility while you
+                  are not watching.
+                </span>
+              </p>
+            </div>
+          </article>
+          <article class="process-step" data-reveal>
+            <span>5</span>
+            <div>
+              <h3>
+                <span class="light-content">Move forward</span>
+                <span class="dark-content">Your data speaks for you</span>
+              </h3>
+              <p>
+                <span class="light-content">
+                  Decisions arrive faster, with fewer repeated requests and less administrative
+                  friction.
+                </span>
+                <span class="dark-content">
+                  You cannot modify, dispute, or negotiate the archive. Above 60 means conditional
+                  approval. 60 or below means denial.
+                </span>
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="faq" class="faq section-shell" aria-labelledby="faq-title">
+        <div class="faq-intro" data-reveal>
+          <h2 id="faq-title">Frequently Asked Questions</h2>
+          <p>
+            <span class="light-content">
+              Plain answers for a simpler support experience.
+            </span>
+            <span class="dark-content">
+              The tone is cold because the system is cold. Every answer is designed to sound
+              reasonable while removing choice.
+            </span>
+          </p>
+        </div>
+        <div class="faq-list">
+          <details data-reveal open>
+            <summary>
+              <span class="light-content">What data helps verify eligibility?</span>
+              <span class="dark-content">What data exactly is being collected?</span>
+            </summary>
+            <p>
+              <span class="light-content">
+                Only approved eligibility signals needed to confirm your status and reduce duplicate
+                paperwork.
+              </span>
+              <span class="dark-content">
+                All of it: physiological, location, behavioral, psychological, and audiovisual data.
+                Is there specific data you think is being withheld? There is not.
+              </span>
+            </p>
+          </details>
+          <details data-reveal>
+            <summary>
+              <span class="light-content">Can I manage my participation?</span>
+              <span class="dark-content">Can I opt out of data collection?</span>
+            </summary>
+            <p>
+              <span class="light-content">
+                Your dashboard gives you visibility into verification status and account support.
+              </span>
+              <span class="dark-content">
+                No. Enrollment is mandatory for welfare eligibility. Data collection is continuous
+                and cannot be paused. There is no off button.
+              </span>
+            </p>
+          </details>
+          <details data-reveal>
+            <summary>
+              <span class="light-content">What happens if something changes?</span>
+              <span class="dark-content">What if my data shows I do not deserve help?</span>
+            </summary>
+            <p>
+              <span class="light-content">
+                Always Proof updates your status as your circumstances change, helping keep your
+                record current.
+              </span>
+              <span class="dark-content">
+                Then the system worked as designed. This is merely a mathematical assessment of your
+                current utility to society.
+              </span>
+            </p>
+          </details>
+          <details data-reveal>
+            <summary>
+              <span class="light-content">Can I appeal a decision?</span>
+              <span class="dark-content">Can I appeal a negative decision?</span>
+            </summary>
+            <p>
+              <span class="light-content">
+                Support teams can review status changes through a guided process.
+              </span>
+              <span class="dark-content">
+                Yes. Processing time: 180 days. Success rate: 2.3 percent. During appeal, you remain
+                ineligible for all benefits.
+              </span>
+            </p>
+          </details>
+        </div>
+      </section>
+
+      <section id="pricing" class="pricing section-shell" aria-labelledby="pricing-title">
+        <div class="section-heading" data-reveal>
+          <h2 id="pricing-title">Pricing Plans</h2>
+          <p>
+            <span class="light-content">
+              Choose the support level that best fits your verification needs.
+            </span>
+            <span class="dark-content">
+              The price is never money. It is privacy, freedom, and finally everything left to give.
+            </span>
+          </p>
+        </div>
+        <div class="plan-row">
+          <article class="plan" data-reveal>
+            <h3>Baseline Monitoring</h3>
+            <p class="cost">
+              <span class="light-content">Essential</span>
+              <span class="dark-content">Your privacy</span>
+            </p>
+            <ul>
+              <li>Biometric verification</li>
+              <li>Location-supported eligibility</li>
+              <li>Status dashboard</li>
+              <li>Automatic record updates</li>
+              <li>Sleep and stability signals</li>
+              <li>Secure data handling</li>
+            </ul>
+            <p class="plan-note">
+              <span class="light-content">For simple, reliable support.</span>
+              <span class="dark-content">For those willing to give up privacy for stability.</span>
+            </p>
+          </article>
+          <article class="plan featured" data-reveal>
+            <h3>Enhanced Coverage</h3>
+            <p class="cost">
+              <span class="light-content">Complete</span>
+              <span class="dark-content">Your freedom</span>
+            </p>
+            <ul>
+              <li>Everything in Essential</li>
+              <li>Voice-assisted verification</li>
+              <li>Communication metadata</li>
+              <li>Predictive status updates</li>
+              <li>AI assessment support</li>
+              <li>Priority dashboard alerts</li>
+            </ul>
+            <p class="plan-note">
+              <span class="light-content">For continuous peace of mind.</span>
+              <span class="dark-content">For those willing to lose autonomy for assurance.</span>
+            </p>
+          </article>
+          <article class="plan" data-reveal>
+            <h3>Total Surveillance</h3>
+            <p class="cost">
+              <span class="light-content">Total Care</span>
+              <span class="dark-content">Everything</span>
+            </p>
+            <ul>
+              <li>Everything in Complete</li>
+              <li>Visual verification layer</li>
+              <li>Continuous recognition</li>
+              <li>Predictive intervention</li>
+              <li>Advanced health signals</li>
+              <li>Priority appeal review</li>
+            </ul>
+            <p class="plan-note">
+              <span class="light-content">For the most complete support experience.</span>
+              <span class="dark-content">For those with nothing left to give.</span>
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="statement" class="statement section-shell" aria-labelledby="statement-title">
+        <div class="statement-lede" data-reveal>
+          <h2 id="statement-title">This is not a real product</h2>
+          <p>
+            Always Proof is a speculative design project. It critiques welfare systems that force
+            vulnerable populations to repeatedly prove eligibility, treating basic survival resources
+            as a conditional privilege earned through submission.
+          </p>
+        </div>
+        <div class="statement-grid">
+          <article data-reveal>
+            <h3>The current problem</h3>
+            <p>
+              Applicants submit the same documents repeatedly, respond to arbitrary policy changes,
+              and absorb rejection with minimal explanation. The burden is entirely on the applicant.
+            </p>
+          </article>
+          <article data-reveal>
+            <h3>Technology is not the solution</h3>
+            <p>
+              More data does not fix structural power. When a system demands total documentation, it
+              is not asking for information. It is demanding submission.
+            </p>
+          </article>
+          <article data-reveal>
+            <h3>Surveillance is not the answer</h3>
+            <p>
+              The difference between dystopia and the present is often scale. Always Proof shows a
+              future already partially here, directed at the most vulnerable.
+            </p>
+          </article>
+          <article data-reveal>
+            <h3>What needs to change</h3>
+            <p>
+              Welfare should be a right, not a privilege. Systems should be transparent and
+              appealable. The burden of proof should be on the system, not the person asking for help.
+            </p>
+          </article>
+        </div>
+        <footer class="closing" data-reveal>
+          <p>What proof are you being asked for?</p>
+          <p>And what would freedom look like?</p>
+        </footer>
+      </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
