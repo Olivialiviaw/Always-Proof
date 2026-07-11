@@ -13,6 +13,71 @@
   </head>
   <body>
     <canvas id="field-canvas" aria-hidden="true"></canvas>
+    <section class="darknet-desktop" aria-hidden="true">
+      <canvas id="dark-rain-canvas" aria-hidden="true"></canvas>
+      <div class="dark-window dark-console">
+        <div class="window-title">
+          <span>ALWAYS PROOF ACCESS NODE</span>
+          <span>live</span>
+        </div>
+        <div class="console-lines">
+          <span>root@ap-node:~$ welfare_stream --attach citizen_61</span>
+          <span>[ok] biometric pulse linked</span>
+          <span>[ok] location drift indexed</span>
+          <span>[warn] appeal channel latency: 180d</span>
+          <span>[deny] manual override unavailable</span>
+          <span>proof_score=61 status=conditional active=true</span>
+        </div>
+      </div>
+      <div class="dark-window dark-network">
+        <div class="window-title">
+          <span>Neural Eligibility Trace</span>
+          <span>x</span>
+        </div>
+        <svg viewBox="0 0 460 250" role="img" aria-label="Red neural network trace">
+          <g class="network-lines">
+            <path d="M38 188 84 82 142 136 206 62 286 92 336 188 420 72" />
+            <path d="M84 82 206 62 336 188 142 136 420 72" />
+            <path d="M38 188 142 136 286 92 420 72 336 188 206 62" />
+            <path d="M84 82 286 92 336 188 206 62 38 188" />
+          </g>
+          <g class="network-nodes">
+            <circle cx="38" cy="188" r="5" />
+            <circle cx="84" cy="82" r="5" />
+            <circle cx="142" cy="136" r="5" />
+            <circle cx="206" cy="62" r="5" />
+            <circle cx="286" cy="92" r="5" />
+            <circle cx="336" cy="188" r="5" />
+            <circle cx="420" cy="72" r="5" />
+          </g>
+        </svg>
+      </div>
+      <div class="dark-window dark-feed">
+        <div class="window-title">
+          <span>Compiling Case Data</span>
+          <span>03:17:44</span>
+        </div>
+        <p>
+          01101001 01100110 00100000 01100100 01100001 01110100 01100001
+          00100000 01100010 01100101 01100011 01101111 01101101 01100101
+          01110011 00100000 01110000 01110010 01101111 01101111 01100110
+        </p>
+      </div>
+      <div class="dark-window dark-pulse">
+        <div class="window-title">
+          <span>Signal Variance</span>
+          <span>unstable</span>
+        </div>
+        <svg viewBox="0 0 360 160" role="img" aria-label="Red signal variance chart">
+          <polyline points="0,112 24,124 42,32 62,136 86,48 116,56 138,72 158,132 188,40 208,88 230,54 252,126 280,66 304,136 330,82 360,104" />
+        </svg>
+      </div>
+      <div class="dark-status-bar">
+        <span>start</span>
+        <span>surveillance layer active</span>
+        <span>no exit</span>
+      </div>
+    </section>
 
     <header class="site-header" data-reveal>
       <a class="brand" href="#top" aria-label="Always Proof home">
@@ -54,7 +119,7 @@
             </span>
           </p>
           <div class="hero-actions" data-reveal>
-            <a class="primary-action" href="#process">
+            <a class="primary-action" href="#process" data-dark-href="#darknet-report">
               <span class="light-content">See how simple it is</span>
               <span class="dark-content">Learn how it watches</span>
             </a>
@@ -92,6 +157,93 @@
             </div>
           </div>
         </aside>
+      </section>
+
+      <section id="darknet-report" class="darknet-report" aria-label="Hidden surveillance interface">
+        <div class="dark-report-head" data-dark-reveal>
+          <span>casefile://citizen-61</span>
+          <h2>Eligibility does not wait for your explanation.</h2>
+          <p>
+            The public site promises fewer forms. The hidden system turns daily life into evidence:
+            sleep, motion, money, speech, hesitation, contact, silence.
+          </p>
+        </div>
+
+        <div class="dark-report-grid">
+          <article class="dark-module dark-score-module" data-dark-reveal>
+            <div class="module-title">
+              <span>self-proof score</span>
+              <span>active</span>
+            </div>
+            <strong>61</strong>
+            <p>Conditional access. Every new signal can lower the score without notice.</p>
+          </article>
+
+          <article class="dark-module dark-command-module" data-dark-reveal>
+            <div class="module-title">
+              <span>terminal log</span>
+              <span>root</span>
+            </div>
+            <ol>
+              <li>attach wearable stream</li>
+              <li>parse spending anomalies</li>
+              <li>compare movement radius</li>
+              <li>score household stability</li>
+              <li>lock appeal queue</li>
+            </ol>
+          </article>
+
+          <article class="dark-module dark-ledger-module" data-dark-reveal>
+            <div class="module-title">
+              <span>data ledger</span>
+              <span>read only</span>
+            </div>
+            <dl>
+              <div>
+                <dt>heartbeat variance</dt>
+                <dd>flagged</dd>
+              </div>
+              <div>
+                <dt>location confidence</dt>
+                <dd>active</dd>
+              </div>
+              <div>
+                <dt>purchase anomaly</dt>
+                <dd>review</dd>
+              </div>
+              <div>
+                <dt>appeal channel</dt>
+                <dd>180d</dd>
+              </div>
+            </dl>
+          </article>
+
+          <article class="dark-module dark-denial-module" data-dark-reveal>
+            <div class="module-title">
+              <span>denial protocol</span>
+              <span>automatic</span>
+            </div>
+            <p>
+              When your life no longer matches the expected pattern, the system does not ask why.
+              It updates your eligibility.
+            </p>
+          </article>
+
+          <article class="dark-module dark-map-module" data-dark-reveal>
+            <div class="module-title">
+              <span>trace field</span>
+              <span>live</span>
+            </div>
+            <svg viewBox="0 0 520 260" role="img" aria-label="Eligibility trace map">
+              <path d="M18 206 C88 82 146 236 222 92 S362 48 502 168" />
+              <path d="M42 72 C122 130 174 38 258 154 S394 232 486 74" />
+              <circle cx="84" cy="119" r="5" />
+              <circle cx="222" cy="92" r="5" />
+              <circle cx="342" cy="126" r="5" />
+              <circle cx="486" cy="74" r="5" />
+            </svg>
+          </article>
+        </div>
       </section>
 
       <section class="promise-band" aria-label="Product promise">
